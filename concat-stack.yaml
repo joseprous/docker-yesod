@@ -1,0 +1,7 @@
+extra-deps:
+  - random-string-0.1.0.1@sha256:3f7722e2ab1448977a895f9df3f95e0dc784d34d9cdc240249a8072d4a9516f5,1127
+  - base58-bytestring-0.1.0@sha256:a1da72ee89d5450bac1c792d9fcbe95ed7154ab7246f2172b57bd4fd9b5eab79,1913
+
+ghc-options:
+  "$everything": -split-sections
+  

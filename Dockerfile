@@ -8,4 +8,5 @@ ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 COPY stack.sh /root
 RUN sh /root/stack.sh
-RUN cd /root/ && stack new my-project yesodweb/postgres --resolver=lts-14.27 && cd my-project && stack build && cd .. && rm -rf my-project
+COPY concat-stack.yaml /root
+RUN cd /root/ && stack new my-project yesodweb/postgres --resolver=lts-16.7 && cd my-project && cat concat-stack.yaml >> stack.yaml && stack build && cd .. && rm -rf my-project
