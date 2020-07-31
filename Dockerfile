@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:18.04
 
 RUN apt-get update && apt-get install -y locales libpq-dev
 RUN echo "en_US UTF-8" > /etc/locale.gen
